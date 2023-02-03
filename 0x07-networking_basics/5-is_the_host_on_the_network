@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script
 
 if [ "$#" -lt "1" ]
