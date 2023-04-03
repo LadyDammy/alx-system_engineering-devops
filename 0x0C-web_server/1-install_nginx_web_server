@@ -3,7 +3,7 @@
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo ufw allow "Nginx HTTP"
-sudo chown -R $USER:$USER /var/www/web-01/html
-sudo echo "Hello World!" > /var/www/web-01/html
+sudo ufw allow 'Nginx HTTP'
+sudo chown -R $USER:$USER /var/www/52.91.117.151/html
+sudo echo "Hello World!" > /var/www/52.91.117.151/html
 sudo service nginx restart
