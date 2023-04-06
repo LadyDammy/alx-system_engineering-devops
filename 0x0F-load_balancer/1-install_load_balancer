@@ -7,11 +7,12 @@ apt-get update
 apt-get install -y haproxy
 
 printf %s "
-frontend hbnb-lb_front
+frontend lims24-tech-frontend
         bind *:80
         mode http
-        default_backend hbnb-lb_back
-backend hbnb-lb_back
+        default_backend lims24-tech-backend
+
+backend lims24-tech-backend
         balance roundrobin
         server 49038-web-01 54.88.152.143:80 check
         server 49038-web-02 35.153.16.93:80 check
