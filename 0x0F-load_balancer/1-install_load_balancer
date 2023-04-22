@@ -14,8 +14,8 @@ frontend lims24-tech-frontend
 
 backend lims24-tech-backend
         balance roundrobin
-        server 49038-web-01 54.88.152.143:80 check
-        server 49038-web-02 35.153.16.93:80 check
+        server 49038-web-01 54.83.140.215:80 check
+        server 49038-web-02 18.206.208.206:80 check
 " >> /etc/haproxy/haproxy.cfg
 
 echo "ENABLED=1" >> /etc/default/haproxy
